@@ -6,7 +6,6 @@ This is a UIGestureRecognizer subclass to enable Swipe-to-Select/Deselect with a
 
 ## Adding to your project
 
-_TBD_
 
 The easiest way to add `ARMultiSelectGestureRecognizer` to your project is via CocoaPods:
 
@@ -14,6 +13,9 @@ The easiest way to add `ARMultiSelectGestureRecognizer` to your project is via C
 
 Alternatively you could copy all the files in the `Classes/` directory into your project. Be sure 'Copy items to destination group's folder' is checked.
 
+#### _We haven't submitted the pull request to CocoaPod Specs yet, in the meantime you can do:_
+
+`pod 'ARMultiSelectGestureRecognizer', :git => 'https://github.com/ayn/ARMultiSelectGestureRecognizer.git'`
 
 ## Use
 
