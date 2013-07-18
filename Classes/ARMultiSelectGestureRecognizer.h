@@ -1,6 +1,5 @@
 //
-//  MultiSelectGestureRecognizer.h
-//  Selective Show
+//  ARMultiSelectGestureRecognizer.h
 //
 //  Created by Ray Tsaihong on 6/28/13.
 //  Copyright (c) 2013 Andrew Ng. All rights reserved.
