@@ -28,7 +28,7 @@ Alternatively you could copy all the files in the `Classes/` directory into your
     [super viewDidLoad];
     self.collectionView.allowsSelection = self.collectionView.allowsMultipleSelection = YES;
 
-	  // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
     ARMultiSelectGestureRecognizer *gestureRecognizer = [[ARMultiSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(UICollectionViewCell *cell) {
         // Punt toggling logic to our UICollectionViewCell subclass
         PhotoCell *photoCell = (PhotoCell *)cell;
