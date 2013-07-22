@@ -15,7 +15,7 @@ Alternatively you could copy all the files in the `Classes/` directory into your
 
 #### _We haven't submitted the pull request to CocoaPod Specs yet, in the meantime you can do:_
 
-`pod 'ARMultiSelectGestureRecognizer', :git => 'https://github.com/ayn/ARMultiSelectGestureRecognizer.git'`
+`pod 'ARSwipeToSelectGestureRecognizer', :git => 'https://github.com/ayn/ARSwipeToSelectGestureRecognizer.git'`
 
 ## Use
 
