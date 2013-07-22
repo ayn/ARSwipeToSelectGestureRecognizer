@@ -1,4 +1,4 @@
-# ARMultiSelectGestureRecognizer
+# ARSwipeToSelectGestureRecognizer
 
 ## Description
 
@@ -7,9 +7,9 @@ This is a UIGestureRecognizer subclass to enable Swipe-to-Select/Deselect with a
 ## Adding to your project
 
 
-The easiest way to add `ARMultiSelectGestureRecognizer` to your project is via CocoaPods:
+The easiest way to add `ARSwipeToSelectGestureRecognizer` to your project is via CocoaPods:
 
-`pod 'ARMultiSelectGestureRecognizer'`
+`pod 'ARSwipeToSelectGestureRecognizer'`
 
 Alternatively you could copy all the files in the `Classes/` directory into your project. Be sure 'Copy items to destination group's folder' is checked.
 
@@ -19,8 +19,8 @@ Alternatively you could copy all the files in the `Classes/` directory into your
 
 ## Use
 
-1. Import the header: `#import "ARMultiSelectGestureRecognizer.h"`
-2. Create an instance of `ARMultiSelectGestureRecognizer`, pass in a block to handle toggling `UICollectionViewCell`
+1. Import the header: `#import "ARSwipeToSelectGestureRecognizer.h"`
+2. Create an instance of `ARSwipeToSelectGestureRecognizer`, pass in a block to handle toggling `UICollectionViewCell`
 
 ####Instatiation, in your UICollectionViewController:
 ```` objective-c
@@ -31,7 +31,7 @@ Alternatively you could copy all the files in the `Classes/` directory into your
     self.collectionView.allowsSelection = self.collectionView.allowsMultipleSelection = YES;
 
     // Do any additional setup after loading the view.
-    ARMultiSelectGestureRecognizer *gestureRecognizer = [[ARMultiSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(UICollectionViewCell *cell) {
+    ARSwipeToSelectGestureRecognizer *gestureRecognizer = [[ARSwipeToSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(UICollectionViewCell *cell) {
         // Punt toggling logic to our UICollectionViewCell subclass
         PhotoCell *photoCell = (PhotoCell *)cell;
         [photoCell toggleSelected];
