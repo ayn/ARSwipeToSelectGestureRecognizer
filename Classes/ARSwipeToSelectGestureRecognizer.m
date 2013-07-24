@@ -110,8 +110,6 @@
 
 - (void)toggleCellAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionView *cv = (UICollectionView *) self.view;
-    UICollectionViewCell *cell = [cv cellForItemAtIndexPath:indexPath];
-    self.toggleSelectedHandler(cell);
+    self.toggleSelectedHandler(indexPath);
 }
 @end

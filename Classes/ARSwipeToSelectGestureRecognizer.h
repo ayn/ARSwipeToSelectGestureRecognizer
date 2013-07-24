@@ -9,5 +9,5 @@
 #import <UIKit/UIGestureRecognizerSubclass.h>
 
 @interface ARSwipeToSelectGestureRecognizer : UIGestureRecognizer
-- (ARSwipeToSelectGestureRecognizer *)initWithTarget:(id)target action:(SEL)action toggleSelectedHandler:(void (^)(UICollectionViewCell *cell))handler;
+- (ARSwipeToSelectGestureRecognizer *)initWithTarget:(id)target action:(SEL)action toggleSelectedHandler:(void (^)(NSIndexPath *indexPath))handler;
 @end
