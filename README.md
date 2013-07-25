@@ -20,7 +20,7 @@ Alternatively you could copy all the files in the `Classes/` directory into your
 ## Use
 
 1. Import the header: `#import "ARSwipeToSelectGestureRecognizer.h"`
-2. Create an instance of `ARSwipeToSelectGestureRecognizer`, pass in a block to handle toggling `UICollectionViewCell`
+2. Create an instance of `ARSwipeToSelectGestureRecognizer`, pass in a block to handle toggling `NSIndexPath`
 
 ####Instatiation, in your UICollectionViewController:
 ```` objective-c
