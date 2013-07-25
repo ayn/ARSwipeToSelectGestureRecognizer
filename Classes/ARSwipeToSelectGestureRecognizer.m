@@ -8,7 +8,7 @@
 #import "ARSwipeToSelectGestureRecognizer.h"
 
 @interface ARSwipeToSelectGestureRecognizer ()
-@property (copy, nonatomic) void (^toggleSelectedHandler)(UICollectionViewCell *);
+@property (copy, nonatomic) void (^toggleSelectedHandler)(NSIndexPath *);
 @property (nonatomic, assign) UIGestureRecognizerState state;
 @property (nonatomic, strong) NSIndexPath *lastIndexPath;
 @property (nonatomic, strong) NSIndexPath *initialIndexPath;
@@ -17,7 +17,7 @@
 
 @implementation ARSwipeToSelectGestureRecognizer
 
-- (ARSwipeToSelectGestureRecognizer *)initWithTarget:(id)target action:(SEL)action toggleSelectedHandler:(void (^)(UICollectionViewCell *))handler
+- (ARSwipeToSelectGestureRecognizer *)initWithTarget:(id)target action:(SEL)action toggleSelectedHandler:(void (^)(NSIndexPath *))handler
 {
     if (self = [super initWithTarget:target action:action]) {
         self.toggleSelectedHandler = handler;
