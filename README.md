@@ -31,12 +31,12 @@ Alternatively you could copy all the files in the `Classes/` directory into your
     self.collectionView.allowsSelection = self.collectionView.allowsMultipleSelection = YES;
 
     // Do any additional setup after loading the view.
-    ARSwipeToSelectGestureRecognizer *gestureRecognizer = [[ARSwipeToSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(UICollectionViewCell *cell) {
-        // Punt toggling logic to our UICollectionViewCell subclass
-        PhotoCell *photoCell = (PhotoCell *)cell;
+    ARSwipeToSelectGestureRecognizer *gestureRecognizer = [[ARSwipeToSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(NSIndexPath *indexPath) {
+        ARPhotoCell *photoCell = (ARPhotoCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
         [photoCell toggleSelected];
     }];
     [self.collectionView addGestureRecognizer:gestureRecognizer];
+
 }
 ````
 
