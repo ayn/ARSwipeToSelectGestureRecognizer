@@ -42,7 +42,7 @@ Alternatively you could copy all the files in the `Classes/` directory into your
 
 ## Demo project
 
-[ARSwipeToSelectPickerController](https://github.com/ayn/ARSwipeToSelectPickerController) is a UIImagePickerController-like assets picker that utilizes ARMultiSelectGestureRecognizer for swipe-to-select. An example app can be found in the its [Demo folder](https://github.com/ayn/ARSwipeToSelectPickerController/tree/master/Demo].
+[ARSwipeToSelectPickerController](https://github.com/ayn/ARSwipeToSelectPickerController) is a UIImagePickerController-like assets picker that utilizes ARMultiSelectGestureRecognizer for swipe-to-select. An example app can be found in the its [Demo folder](https://github.com/ayn/ARSwipeToSelectPickerController/tree/master/Demo).
 
 ## Co-Authors
 
