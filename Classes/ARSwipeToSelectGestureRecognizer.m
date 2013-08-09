@@ -79,8 +79,7 @@
     if (self.state == UIGestureRecognizerStatePossible) {
         // handle taps
         [self toggleCellAtIndexPath:self.initialIndexPath];
-
-        self.state = UIGestureRecognizerStateFailed;
+        self.state = UIGestureRecognizerStateRecognized;
         return;
     }
     
