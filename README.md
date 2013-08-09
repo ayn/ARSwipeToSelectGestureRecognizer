@@ -32,10 +32,16 @@ Alternatively you could copy all the files in the `Classes/` directory into your
 
     // Do any additional setup after loading the view.
     ARSwipeToSelectGestureRecognizer *gestureRecognizer = [[ARSwipeToSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(NSIndexPath *indexPath) {
-        ARPhotoCell *photoCell = (ARPhotoCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-        [photoCell toggleSelected];
+        if ([[self.collectionView indexPathsForSelectedItems] containsObject:indexPath]) {
+            [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+            [self.collectionView cellForItemAtIndexPath:indexPath].alpha = 1.0;
+        } else {
+            [self.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+            [self.collectionView cellForItemAtIndexPath:indexPath].alpha = 0.5;
+        }
     }];
     [self.collectionView addGestureRecognizer:gestureRecognizer];
+
 
 }
 ````
