@@ -7,7 +7,7 @@ This is a UIGestureRecognizer subclass to enable Swipe-to-Select/Deselect with a
 ## Adding to your project
 
 
-The easiest way to add `ARSwipeToSelectGestureRecognizer` to your project is via CocoaPods:
+The easiest way to add `ARSwipeToSelectGestureRecognizer` to your project is via [CocoaPods](http://cocoapods.org):
 
 `pod 'ARSwipeToSelectGestureRecognizer'`
 
