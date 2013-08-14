@@ -52,3 +52,7 @@ Alternatively you could copy all the files in the `Classes/` directory into your
 - [Andrew Ng](http://github.com/ayn)
 - [Ray Tsaihong](http://github.com/rmundo)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ayn/ARSwipeToSelectGestureRecognizer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
