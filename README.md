@@ -1,5 +1,7 @@
 # ARSwipeToSelectGestureRecognizer
 
+![animatedgif](https://files.app.net/hjq6h7HO.gif)
+
 ## Description
 
 This is a UIGestureRecognizer subclass to enable Swipe-to-Select/Deselect with a UICollectionView.
