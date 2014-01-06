@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ARSwipeToSelectGestureRecognizer"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "Swipe-to-Select/Deselect gestures with UICollectionView."
   s.description  = "A UIGestureRecognizer subclass to enable Swipe-to-Select/Deselect with a UICollectionView."
   s.homepage     = "https://github.com/ayn/ARSwipeToSelectGestureRecognizer"
