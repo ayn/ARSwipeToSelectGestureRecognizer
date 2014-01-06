@@ -45,9 +45,16 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesMoved:touches withEvent:event];
-
+    
     UICollectionView *cv = (UICollectionView *) self.view;
+    
     NSIndexPath *currentPath = [cv indexPathForItemAtPoint:[[touches anyObject] locationInView:self.view]];
+    
+    if (!currentPath) {
+        // Sometimes we get in with a point between 2 cells, UICollectionView returns nil indexPath
+        // we then wait til next time around to process this current cell (when we're on the actual cell)
+        currentPath = self.lastIndexPath;
+    }
     
     if (self.state == UIGestureRecognizerStateBegan || self.state == UIGestureRecognizerStateChanged) {
         self.state = UIGestureRecognizerStateChanged;
@@ -61,7 +68,7 @@
         }
     } else if (self.state == UIGestureRecognizerStatePossible){
         CGPoint currentPoint = [[touches anyObject] locationInView:self.view];
-        if (fabsf(currentPoint.y - self.initialPoint.y) > 2.0 * fabsf(currentPoint.x - self.initialPoint.x)) {
+        if (fabsf(currentPoint.y - self.initialPoint.y) > 1.2 * fabsf(currentPoint.x - self.initialPoint.x)) {
             self.state = UIGestureRecognizerStateFailed;
             return;
         }
@@ -85,7 +92,7 @@
     
     if (self.state == UIGestureRecognizerStateFailed)
         return;
-
+    
     self.state = UIGestureRecognizerStateRecognized;
     self.lastIndexPath = nil;
 }
