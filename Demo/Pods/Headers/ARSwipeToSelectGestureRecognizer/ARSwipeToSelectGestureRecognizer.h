@@ -1,0 +1,1 @@
+../../ARSwipeToSelectGestureRecognizer/Classes/ARSwipeToSelectGestureRecognizer.h

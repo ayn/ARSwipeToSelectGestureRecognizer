@@ -1,0 +1,10 @@
+PODS:
+  - ARSwipeToSelectGestureRecognizer (0.3)
+
+DEPENDENCIES:
+  - ARSwipeToSelectGestureRecognizer
+
+SPEC CHECKSUMS:
+  ARSwipeToSelectGestureRecognizer: fe4da47d42db763cf1b822eefa5a9be34b40eb1f
+
+COCOAPODS: 0.29.0

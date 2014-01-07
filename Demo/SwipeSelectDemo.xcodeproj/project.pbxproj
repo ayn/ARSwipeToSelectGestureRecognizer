@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0009CC1520004C17BAF22B23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 150F8B50497948288317B213 /* libPods.a */; };
 		718C764A17AF5AFC003150F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718C764917AF5AFC003150F9 /* UIKit.framework */; };
 		718C764C17AF5AFC003150F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718C764B17AF5AFC003150F9 /* Foundation.framework */; };
 		718C764E17AF5AFC003150F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718C764D17AF5AFC003150F9 /* CoreGraphics.framework */; };
@@ -21,12 +22,13 @@
 		718C766917AF5AFC003150F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C766817AF5AFC003150F9 /* ViewController.m */; };
 		718C767017AF9EB3003150F9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718C766F17AF9EB3003150F9 /* AssetsLibrary.framework */; };
 		718C767317AF9F4D003150F9 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C767217AF9F4D003150F9 /* SelectPhotoViewController.m */; };
-		718C767717AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C767517AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.m */; };
 		718C767A17AFAB2D003150F9 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C767917AFAB2D003150F9 /* PhotoCell.m */; };
 		71E0384B17B5437000C3A60A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E0384A17B5437000C3A60A /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150F8B50497948288317B213 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23458606F2AC40919FDA1CC1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		718C764617AF5AFC003150F9 /* SwipeSelectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeSelectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718C764917AF5AFC003150F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		718C764B17AF5AFC003150F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,8 +49,6 @@
 		718C766F17AF9EB3003150F9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		718C767117AF9F4D003150F9 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
 		718C767217AF9F4D003150F9 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
-		718C767517AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSwipeToSelectGestureRecognizer.m; sourceTree = "<group>"; };
-		718C767617AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSwipeToSelectGestureRecognizer.h; sourceTree = "<group>"; };
 		718C767817AFAB2D003150F9 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
 		718C767917AFAB2D003150F9 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		71E0384A17B5437000C3A60A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -64,6 +64,7 @@
 				718C764A17AF5AFC003150F9 /* UIKit.framework in Frameworks */,
 				718C764C17AF5AFC003150F9 /* Foundation.framework in Frameworks */,
 				718C764E17AF5AFC003150F9 /* CoreGraphics.framework in Frameworks */,
+				0009CC1520004C17BAF22B23 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +79,7 @@
 				718C764F17AF5AFC003150F9 /* SwipeSelectDemo */,
 				718C764817AF5AFC003150F9 /* Frameworks */,
 				718C764717AF5AFC003150F9 /* Products */,
+				23458606F2AC40919FDA1CC1 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +97,7 @@
 				718C764917AF5AFC003150F9 /* UIKit.framework */,
 				718C764B17AF5AFC003150F9 /* Foundation.framework */,
 				718C764D17AF5AFC003150F9 /* CoreGraphics.framework */,
+				150F8B50497948288317B213 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,7 +105,6 @@
 		718C764F17AF5AFC003150F9 /* SwipeSelectDemo */ = {
 			isa = PBXGroup;
 			children = (
-				718C767417AFA8B6003150F9 /* GestureRecognizer */,
 				718C765817AF5AFC003150F9 /* AppDelegate.h */,
 				718C765917AF5AFC003150F9 /* AppDelegate.m */,
 				718C766117AF5AFC003150F9 /* MainStoryboard_iPhone.storyboard */,
@@ -132,15 +134,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		718C767417AFA8B6003150F9 /* GestureRecognizer */ = {
-			isa = PBXGroup;
-			children = (
-				718C767517AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.m */,
-				718C767617AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.h */,
-			);
-			name = GestureRecognizer;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 718C766C17AF5AFC003150F9 /* Build configuration list for PBXNativeTarget "SwipeSelectDemo" */;
 			buildPhases = (
+				F9497736F7954B0198B289EF /* Check Pods Manifest.lock */,
 				718C764217AF5AFC003150F9 /* Sources */,
 				718C764317AF5AFC003150F9 /* Frameworks */,
 				718C764417AF5AFC003150F9 /* Resources */,
+				4AA26195FC6448B2863A641D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +198,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AA26195FC6448B2863A641D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9497736F7954B0198B289EF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		718C764217AF5AFC003150F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -212,7 +240,6 @@
 				718C765A17AF5AFC003150F9 /* AppDelegate.m in Sources */,
 				718C766917AF5AFC003150F9 /* ViewController.m in Sources */,
 				718C767317AF9F4D003150F9 /* SelectPhotoViewController.m in Sources */,
-				718C767717AFA8CD003150F9 /* ARSwipeToSelectGestureRecognizer.m in Sources */,
 				718C767A17AFAB2D003150F9 /* PhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +334,7 @@
 		};
 		718C766D17AF5AFC003150F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23458606F2AC40919FDA1CC1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeSelectDemo/SwipeSelectDemo-Prefix.pch";
@@ -318,6 +346,7 @@
 		};
 		718C766E17AF5AFC003150F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23458606F2AC40919FDA1CC1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeSelectDemo/SwipeSelectDemo-Prefix.pch";
