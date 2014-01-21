@@ -29,14 +29,14 @@
 /* Begin PBXFileReference section */
 		150F8B50497948288317B213 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		23458606F2AC40919FDA1CC1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		718C764617AF5AFC003150F9 /* SwipeSelectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeSelectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718C764617AF5AFC003150F9 /* SwipeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718C764917AF5AFC003150F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		718C764B17AF5AFC003150F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		718C764D17AF5AFC003150F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		718C765117AF5AFC003150F9 /* SwipeSelectDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeSelectDemo-Info.plist"; sourceTree = "<group>"; };
+		718C765117AF5AFC003150F9 /* SwipeShare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeShare-Info.plist"; sourceTree = "<group>"; };
 		718C765317AF5AFC003150F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		718C765517AF5AFC003150F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		718C765717AF5AFC003150F9 /* SwipeSelectDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeSelectDemo-Prefix.pch"; sourceTree = "<group>"; };
+		718C765717AF5AFC003150F9 /* SwipeShare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeShare-Prefix.pch"; sourceTree = "<group>"; };
 		718C765817AF5AFC003150F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		718C765917AF5AFC003150F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		718C765B17AF5AFC003150F9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		718C764717AF5AFC003150F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				718C764617AF5AFC003150F9 /* SwipeSelectDemo.app */,
+				718C764617AF5AFC003150F9 /* SwipeShare.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,10 +123,10 @@
 		718C765017AF5AFC003150F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				718C765117AF5AFC003150F9 /* SwipeSelectDemo-Info.plist */,
+				718C765117AF5AFC003150F9 /* SwipeShare-Info.plist */,
 				718C765217AF5AFC003150F9 /* InfoPlist.strings */,
 				718C765517AF5AFC003150F9 /* main.m */,
-				718C765717AF5AFC003150F9 /* SwipeSelectDemo-Prefix.pch */,
+				718C765717AF5AFC003150F9 /* SwipeShare-Prefix.pch */,
 				718C765B17AF5AFC003150F9 /* Default.png */,
 				718C765D17AF5AFC003150F9 /* Default@2x.png */,
 				718C765F17AF5AFC003150F9 /* Default-568h@2x.png */,
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		718C764517AF5AFC003150F9 /* SwipeSelectDemo */ = {
+		718C764517AF5AFC003150F9 /* SwipeShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 718C766C17AF5AFC003150F9 /* Build configuration list for PBXNativeTarget "SwipeSelectDemo" */;
+			buildConfigurationList = 718C766C17AF5AFC003150F9 /* Build configuration list for PBXNativeTarget "SwipeShare" */;
 			buildPhases = (
 				F9497736F7954B0198B289EF /* Check Pods Manifest.lock */,
 				718C764217AF5AFC003150F9 /* Sources */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = SwipeSelectDemo;
+			name = SwipeShare;
 			productName = SwipeSelectDemo;
-			productReference = 718C764617AF5AFC003150F9 /* SwipeSelectDemo.app */;
+			productReference = 718C764617AF5AFC003150F9 /* SwipeShare.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,9 +163,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Ray Tsaihong";
+				ORGANIZATIONNAME = "Caffeinated Apps";
 			};
-			buildConfigurationList = 718C764117AF5AFC003150F9 /* Build configuration list for PBXProject "SwipeSelectDemo" */;
+			buildConfigurationList = 718C764117AF5AFC003150F9 /* Build configuration list for PBXProject "SwipeShare" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				718C764517AF5AFC003150F9 /* SwipeSelectDemo */,
+				718C764517AF5AFC003150F9 /* SwipeShare */,
 			);
 		};
 /* End PBXProject section */
@@ -337,9 +337,10 @@
 			baseConfigurationReference = 23458606F2AC40919FDA1CC1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SwipeSelectDemo/SwipeSelectDemo-Prefix.pch";
-				INFOPLIST_FILE = "SwipeSelectDemo/SwipeSelectDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SwipeSelectDemo/SwipeShare-Prefix.pch";
+				INFOPLIST_FILE = "SwipeSelectDemo/SwipeShare-Info.plist";
+				PRODUCT_NAME = SwipeShare;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -349,9 +350,10 @@
 			baseConfigurationReference = 23458606F2AC40919FDA1CC1 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SwipeSelectDemo/SwipeSelectDemo-Prefix.pch";
-				INFOPLIST_FILE = "SwipeSelectDemo/SwipeSelectDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SwipeSelectDemo/SwipeShare-Prefix.pch";
+				INFOPLIST_FILE = "SwipeSelectDemo/SwipeShare-Info.plist";
+				PRODUCT_NAME = SwipeShare;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -359,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		718C764117AF5AFC003150F9 /* Build configuration list for PBXProject "SwipeSelectDemo" */ = {
+		718C764117AF5AFC003150F9 /* Build configuration list for PBXProject "SwipeShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				718C766A17AF5AFC003150F9 /* Debug */,
@@ -368,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		718C766C17AF5AFC003150F9 /* Build configuration list for PBXNativeTarget "SwipeSelectDemo" */ = {
+		718C766C17AF5AFC003150F9 /* Build configuration list for PBXNativeTarget "SwipeShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				718C766D17AF5AFC003150F9 /* Debug */,

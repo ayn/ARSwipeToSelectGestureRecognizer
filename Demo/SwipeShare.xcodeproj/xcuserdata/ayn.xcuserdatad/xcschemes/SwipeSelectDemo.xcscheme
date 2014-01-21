@@ -7,6 +7,20 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "718C764517AF5AFC003150F9"
+               BuildableName = "SwipeSelectDemo.app"
+               BlueprintName = "SwipeSelectDemo"
+               ReferencedContainer = "container:SwipeSelectDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
@@ -15,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "718C764517AF5AFC003150F9"
-               BuildableName = "SwipeSelectDemo.app"
-               BlueprintName = "SwipeSelectDemo"
-               ReferencedContainer = "container:SwipeSelectDemo.xcodeproj">
+               BuildableName = "SwipeShare.app"
+               BlueprintName = "SwipeShare"
+               ReferencedContainer = "container:SwipeShare.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "718C764517AF5AFC003150F9"
-            BuildableName = "SwipeSelectDemo.app"
-            BlueprintName = "SwipeSelectDemo"
-            ReferencedContainer = "container:SwipeSelectDemo.xcodeproj">
+            BuildableName = "SwipeShare.app"
+            BlueprintName = "SwipeShare"
+            ReferencedContainer = "container:SwipeShare.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "718C764517AF5AFC003150F9"
-            BuildableName = "SwipeSelectDemo.app"
-            BlueprintName = "SwipeSelectDemo"
-            ReferencedContainer = "container:SwipeSelectDemo.xcodeproj">
+            BuildableName = "SwipeShare.app"
+            BlueprintName = "SwipeShare"
+            ReferencedContainer = "container:SwipeShare.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
