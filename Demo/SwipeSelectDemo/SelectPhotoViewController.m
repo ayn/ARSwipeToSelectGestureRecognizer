@@ -101,8 +101,9 @@
 
 - (void)showShareController:(id)sender
 {
-    NSMutableArray *returnAssets = [[NSMutableArray alloc] initWithCapacity:[self.group numberOfAssets]];
-    [[self.collectionView indexPathsForSelectedItems] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    NSArray *selectedIndexPaths = [self.collectionView indexPathsForSelectedItems];
+    NSMutableArray *returnAssets = [[NSMutableArray alloc] initWithCapacity:selectedIndexPaths.count];
+    [selectedIndexPaths enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSIndexPath *indexPath = (NSIndexPath *)obj;
         [returnAssets addObject:self.assets[indexPath.row]];
     }];
