@@ -11,10 +11,7 @@
 #import "ARSwipeToSelectGestureRecognizer.h"
 
 @interface SelectPhotoViewController () <UIGestureRecognizerDelegate>
-
 @property (nonatomic, strong) NSMutableArray *assets;
-@property (nonatomic, strong) NSMutableArray *selectedAssets;
-
 @end
 
 @implementation SelectPhotoViewController
@@ -34,7 +31,7 @@
 	// Do any additional setup after loading the view.
     //[self.collectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:@"PhotoCell"];
     self.collectionView.allowsSelection = self.collectionView.allowsMultipleSelection = YES;
-    [self initAssetArrays];
+    self.assets = [[NSMutableArray alloc] initWithCapacity:[self.group numberOfAssets]];
     [self loadAssets];
 	// Do any additional setup after loading the view.
     ARSwipeToSelectGestureRecognizer *gestureRecognizer = [[ARSwipeToSelectGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:) toggleSelectedHandler:^(NSIndexPath *indexPath) {
@@ -45,12 +42,14 @@
             [self.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
             [self.collectionView cellForItemAtIndexPath:indexPath].alpha = 0.5;
         }
+        [self checkButton];
     }];
 
     [self.collectionView addGestureRecognizer:gestureRecognizer];
     
-    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStylePlain target:self action:@selector(showShareController:)];
-    //UINavigationItem *button = [[UINavigationItem alloc] initWithTitle:@"Test"];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(showShareController:)];
+
+    button.enabled = NO;
     self.navigationItem.rightBarButtonItem = button;
 }
 
@@ -87,15 +86,7 @@
 
 #pragma mark - Private methods
 - (IBAction)handleGesture:(id)sender {
-}
-
-- (void)initAssetArrays
-{
-    self.assets = [[NSMutableArray alloc] initWithCapacity:[self.group numberOfAssets]];
-    self.selectedAssets = [[NSMutableArray alloc] initWithCapacity:[self.group numberOfAssets]];
-    for (int i=0; i<[self.group numberOfAssets]; ++i) {
-        self.selectedAssets[i] = [NSNumber numberWithBool:NO];
-    }
+    // Do nothing
 }
 
 - (void)loadAssets
@@ -119,6 +110,11 @@
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:returnAssets applicationActivities:nil];
     activityViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentViewController:activityViewController animated:YES completion:nil];
+}
+
+- (void)checkButton
+{
+    self.navigationItem.rightBarButtonItem.enabled = ([self.collectionView indexPathsForSelectedItems].count > 0);
 }
 
 @end
